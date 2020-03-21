@@ -12,6 +12,8 @@ heroku login
 
 heroku create pyyhonface-recognition
 
+heroku git:remote -a pyyhonface-recognition
+
 git push heroku master
 
   https://pyyhonface-recognition.herokuapp.com
