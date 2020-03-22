@@ -15,11 +15,11 @@ like:
 
 
  
-    • Creating Apps
+                         • Creating Apps
     
-    • Renaming Apps
+                         • Renaming Apps
     
-    • Deleting Apps
+                         • Deleting Apps
 
  Prerequisites:
 --------------------------------
