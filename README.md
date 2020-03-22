@@ -106,14 +106,14 @@ Step # 05:
 - Initialize a local Git repository and commit your application code to it.
 
 Note: You should initialize the Git repository in the app’s root directory.Otherwise it will not run when deployed on Heroku.
+  
+                      $ cd python-heroku
 
-$ cd python-heroku
+                      $ git init
 
-$ git init
+                      $ git add .
 
-$ git add .
-
-$ git commit -m “My first commit”
+                      $ git commit -m “My first commit”
 
 Step # 06:
 ------------------
