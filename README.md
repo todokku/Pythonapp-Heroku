@@ -176,3 +176,4 @@ git push heroku master
   
   
   tutorial :https://devcenter.heroku.com/articles/getting-started-with-python
+  Deployment Options : https://flask.palletsprojects.com/en/0.12.x/deploying/
