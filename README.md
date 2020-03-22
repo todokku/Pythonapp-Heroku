@@ -53,6 +53,7 @@ Step # 02:
 - Set http-socket to :$(PORT) in uWSGI Configuration File (app.ini):
 
 [uwsgi]
+
 wsgi-file = app.py
 
 callable = app
@@ -87,7 +88,7 @@ Step # 03:
  
  - Make a Procfile to start your uWSGI instance.
 
-web: uwsgi app.ini
+                  web: uwsgi app.ini
 
 
 
@@ -97,7 +98,7 @@ Step # 04:
 
 - After you install the CLI, run the heroku login command. You’ll be prompted to enter any key to go to your web browser to complete login. The CLI will then log you in automatically.
 
-$ heroku login
+                   $ heroku login
 
 Step # 05:
 -------------------------
@@ -119,12 +120,12 @@ Step # 06:
 
 - Create a Heroku app:
 
-$ heroku create app-name
+         $ heroku create app-name
 
 You can give any name of your choice instead of app-name.
 For example :
 
-$ heroku create face-recognition-app
+        $ heroku create face-recognition-app
 
 When you deploy your application on Heroku,you will have to choose a unique name for your application. 
 
@@ -135,7 +136,7 @@ Step # 07:
 - Add a remote to your local repository
 
 
-$ heroku git:remote -a face-recognition-app
+        $ heroku git:remote -a face-recognition-app
 
 
 
@@ -145,13 +146,13 @@ Step # 08:
 - Use the git push command to deploy your app on Heroku
 
 
-$ git push heroku master 
+            $ git push heroku master 
 
 
 You will find your app running as:
 -------------------------------
 
-Face-recognition-app.herokuapp.com
+        Face-recognition-app.herokuapp.com
 
 ----------------------------------------------------------------------------------------------------------------------------
 Summary:
