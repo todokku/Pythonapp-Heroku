@@ -32,6 +32,7 @@ $ sudo snap install --classic heroku
 
 
 Scenario:
+
 We are deploying Flask A.I Application.NGINX is the web server and reverse proxy, that passes requests on to uWSGI. uWSGI is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.
 
 
@@ -140,9 +141,9 @@ You will find your app running as:
 
 Face-recognition-app.herokuapp.com
 
-
-
+----------------------------------------------------------------------------------------------------------------------------
 Summary:
+----------------------------------------------------------------------------------------------------------------------------
 
 git init
 
