@@ -7,6 +7,7 @@ Heroku has a free service model for small projects.It is a Platform as a Service
 If you want your application running on Heroku , you will have to know some commands on Heroku CLI & Dashboard.
 
 The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal.
+----------------------------------------------------------------------------------------------------------------------
 
 The Heroku Dashboard is the primary web interface for interacting with the Heroku platform. It provides UI support for tasks 
 
@@ -21,6 +22,7 @@ like:
     • Deleting Apps
 
  Prerequisites:
+--------------------------------
 
     •  Git Installed on system
 
@@ -32,11 +34,13 @@ $ sudo snap install --classic heroku
 
 
 Scenario:
+----------------
 
 We are deploying Flask A.I Application.NGINX is the web server and reverse proxy, that passes requests on to uWSGI. uWSGI is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.
 
 
 Step # 01:
+-------------------
  
 - Clone the Project from Github.
 
@@ -44,6 +48,7 @@ Ref: https://github.com/Cryptic-Gemini/Pythonapp-Heroku.git
 
 
 Step # 02:
+---------------------
 
 - Set http-socket to :$(PORT) in uWSGI Configuration File (app.ini):
 
@@ -78,6 +83,7 @@ http-socket = :$(PORT)
 
 
 Step # 03:
+------------------
  
  - Make a Procfile to start your uWSGI instance.
 
@@ -87,12 +93,14 @@ web: uwsgi app.ini
 
 
 Step # 04:
+--------------------
 
 - After you install the CLI, run the heroku login command. You’ll be prompted to enter any key to go to your web browser to complete login. The CLI will then log you in automatically.
 
 $ heroku login
 
 Step # 05:
+-------------------------
 
 - Initialize a local Git repository and commit your application code to it.
 
@@ -107,6 +115,7 @@ $ git add .
 $ git commit -m “My first commit”
 
 Step # 06:
+------------------
 
 - Create a Heroku app:
 
@@ -121,6 +130,7 @@ When you deploy your application on Heroku,you will have to choose a unique name
 
 
 Step # 07:
+---------------
 
 - Add a remote to your local repository
 
@@ -130,6 +140,7 @@ $ heroku git:remote -a face-recognition-app
 
 
 Step # 08:
+------------------------
 
 - Use the git push command to deploy your app on Heroku
 
@@ -138,6 +149,7 @@ $ git push heroku master
 
 
 You will find your app running as:
+-------------------------------
 
 Face-recognition-app.herokuapp.com
 
