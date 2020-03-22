@@ -173,3 +173,6 @@ heroku git:remote -a pyyhonface-recognition
 git push heroku master
 
   https://pyyhonface-recognition.herokuapp.com
+  
+  
+  tutorial :https://devcenter.heroku.com/articles/getting-started-with-python
