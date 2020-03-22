@@ -52,25 +52,25 @@ Step # 02:
 
 - Set http-socket to :$(PORT) in uWSGI Configuration File (app.ini):
 
-[uwsgi]
+                              [uwsgi]
 
-wsgi-file = app.py
+                              wsgi-file = app.py
 
-callable = app
+                             callable = app
 
-http-socket = :$(PORT)
+                              http-socket = :$(PORT)
 
-processes = 4
+                              processes = 4
 
-threads = 2
+                              threads = 2
 
-master = true
+                              master = true
 
-chmod-socket = 660
+                             chmod-socket = 660
 
-vacuum = true
+                             vacuum = true
 
-die-on-term = true
+                             die-on-term = true
 
 If you are using a service like Webfaction or Heroku to host your application, you can use http-socket .
 
